@@ -1,0 +1,58 @@
+.boxItem {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 4.5rem;
+	background: var(--gray-500);
+	border: 1px solid #333333;
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+	border-radius: 8px;
+	font-size: 0.875rem;
+	line-height: 1.4;
+	color: var(--gray-100);
+	padding: 1rem;
+}
+
+.boxItem p {
+	margin: 1rem 0.75rem;
+}
+
+.trash > button {
+	background: transparent;
+	border: none;
+	padding: 0.375rem;
+	color: var(--gray-300);
+	cursor: pointer;
+	transition: color 0.5s, background-color 0.3s;
+}
+
+.trash > button:hover {
+	color: var(--danger);
+	background: var(--gray-400);
+	border-radius: 4px;
+}
+
+.checkButton {
+	color: var(--blue-300);
+	background: transparent;
+	border: none;
+	transition: transform 0.4s;
+	cursor: pointer;
+}
+
+.checked {
+	color: var(--gray-300);
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.textChecked {
+	text-decoration: line-through;
+	color: var(--gray-300);
+}
+
+.textUnchecked {
+	text-decoration: none;
+	color: var(--gray-100);
+}
